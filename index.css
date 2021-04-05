@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+#container {
+    width: 60%;
+    margin-top: 50px;
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-right: 50px;
+    border: solid 1px steelblue;
+    border-radius: 10px;
+}
