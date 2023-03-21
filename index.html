@@ -19,6 +19,10 @@
         </li>
     </ul>
 </div>
+
+<!-- Add container for widget -->
+<div id="widget-container"></div>
+
 <!-- Include React library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
@@ -26,8 +30,14 @@
 <!-- Load widget code -->
 <script src="https://github.com/santiago-rm/santiago-rm.github.io/blob/master/react-widget-babel.js"></script>
 
-<!-- Add container for widget -->
-<div id="widget-container"></div>
+    
+<script>
+// Render widget into container
+ReactDOM.render(
+  React.createElement(Widget),
+  document.getElementById('widget-container')
+);
+</script>
 
 </body>
 
