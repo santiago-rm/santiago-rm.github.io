@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WRE - List View Widget</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" href="https://sandbox.resmarksystems.com/css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
+</head>
+
+<body>
+  <div id="section1">
+    <rm-shopping-cart order-page-url="https://westernriver.sandbox.resmarksystems.com/public/order/index/Order/view" class="link" style="color:#000000" />
+  </div>
+  <div id="section2">
+<rm-list-view entity-id="60c21e7a367f8e001934442f" show-available-quantity="Yes"
+                add-to-cart-text="Add to Cart" add-to-cart-bg="#0000ff" add-to-cart-color="#ffffff"
+                search-text="Search" search-bg="#008000" search-color="#ffffff" 
+                reset-text="Reset" reset-bg="#000000" reset-color="#ffffff" 
+                load-more-text="Load More Results" load-more-bg="#9400d3" load-more-color="#ffffff"
+                use-brand-colors="true"
+        />
+  </div>
+
+
+
+<script async src="https://sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=60c21e7a367f8e001934442f&useBrandColors=true"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
+</body>
+</html>
