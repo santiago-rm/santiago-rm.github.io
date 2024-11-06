@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHOGUN - List View Widget</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" href="https://sandbox.resmarksystems.com/css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+  <div id="section1">
+    <rm-shopping-cart order-page-url="https://shogunmotorbikeadventures.sandbox.resmarksystems.com/public/order/index/Order/view" class="link" style="color:#000000" />
+  </div>
+  <div id="section2">
+<rm-list-view entity-id="667b456ef10f6f0012f43cfa" show-available-quantity="No"
+                add-to-cart-text="Add to Cart" add-to-cart-bg="#BD2031" add-to-cart-color="#000000"
+                sold-out-text="Sold Out" sold-out-bg="#971A08" sold-out-color="#ffffff"
+                search-text="Search" search-bg="#BD2031" search-color="#000000" 
+                reset-text="Reset" reset-bg="#f1f1f1" reset-color="#6a6a6a" 
+                load-more-text="Load More Results" load-more-bg="#f1f1f1" load-more-color="#6a6a6a"
+                use-brand-colors="false" result-quantity="20" from-date="''" to-date="''" 
+                quantity="''" type="[]" location="[]" product-code="[]" />
+  </div>
+
+
+
+<script async src="https://sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=667b456ef10f6f0012f43cfa&useBrandColors=false"></script>
+<script async src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+</body>
+</html>
