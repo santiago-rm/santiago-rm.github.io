@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WRE - List View Widget</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+<link rel="stylesheet" href="https://sandbox.resmarksystems.com/css/admin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+  <div id="section1">
+    <rm-shopping-cart order-page-url="https://testlistwidgetsandbox.sandbox.resmarksystems.com/public/order/index/Order/view" class="link" style="color:#36ca71" />
+  </div>
+  <div id="section2">
+<rm-list-view entity-id="6888dfe9e6a1e2001204bad1" show-available-quantity="Yes" sold-as-name="Yes"
+                add-to-cart-text="Add to Cart" add-to-cart-bg="#c83030" add-to-cart-color="#9b6060"
+                sold-out-text="Sold Out" sold-out-bg="#971A08" sold-out-color="#ffffff"
+                search-text="Search" search-bg="#3cac31" search-color="#5ad5d2" 
+                reset-text="Reset" reset-bg="#9400d3" reset-color="#008000" 
+                load-more-text="Load More Results" load-more-bg="#a6246d" load-more-color="#bf59ba"
+                use-brand-colors="false" result-quantity="20" from-date="''" to-date="''" 
+                quantity="''" type="[]" location="[]" product-code="[]" />
+  </div>
+
+
+
+<script async src="https://sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=6888dfe9e6a1e2001204bad1&useBrandColors=false"></script>
+<script async src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+</body>
+</html>
