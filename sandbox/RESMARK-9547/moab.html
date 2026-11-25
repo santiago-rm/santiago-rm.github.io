@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESMARK-9547 - Moab (supplier)</title>
+  <style>
+    body{font-family:sans-serif;margin:24px;max-width:900px}
+    td{padding:10px;border-bottom:1px solid #ddd;vertical-align:middle}
+    code{background:#f3f3f3;padding:2px 4px}
+    .note{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px}
+  </style>
+</head>
+<body>
+  <h2>RESMARK-9547 - Moab page (supplier)</h2>
+  <p>Widget for Moab Adventure Center <code>59a85113d0a18245272d6205</code> on <b>staging-sandbox</b>. <a href="wre.html">WRE page</a></p>
+  <p class="note">Needs the RESMARK-9547 build deployed on staging-sandbox. Open in a private window (logged out).</p>
+  <p><rm-shopping-cart order-page-url="https://staging-sandbox.resmarksystems.com/public/order/index/Order/view"></rm-shopping-cart></p>
+  <table>
+    <tr><td><b>1. Supplier product</b><br><small>Arches Morning Tour (zAAs1r). Product page opens, a date can be booked, it adds to the cart.</small></td><td><rm-cart-button product-code="zAAs1r" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>2. Supplier product</b><br><small>Full-Day Moab Rafting (v6TA0D). Same as above.</small></td><td><rm-cart-button product-code="v6TA0D" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>3. Invalid code</b><br><small>Expect: "Please call Moab Adventure Center at &lt;phone&gt;" with the phone number filled in.</small></td><td><rm-cart-button product-code="NOPE00" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>4. Promo code</b><br><small>With a product in the cart, apply a valid promo code at checkout: the discount shows and the total drops. A made-up code shows an error.</small></td><td></td></tr>
+  </table>
+  <script async src="https://staging-sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=59a85113d0a18245272d6205&useBrandColors=true"></script>
+</body>
+</html>

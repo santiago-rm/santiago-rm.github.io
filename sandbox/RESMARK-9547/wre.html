@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESMARK-9547 - WRE (reseller)</title>
+  <style>
+    body{font-family:sans-serif;margin:24px;max-width:900px}
+    td{padding:10px;border-bottom:1px solid #ddd;vertical-align:middle}
+    code{background:#f3f3f3;padding:2px 4px}
+    .note{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px}
+  </style>
+</head>
+<body>
+  <h2>RESMARK-9547 - WRE page (reseller)</h2>
+  <p>Widget for Western River Expeditions <code>59c280af63feeb671e8805bc</code> on <b>staging-sandbox</b>. <a href="moab.html">Moab page</a></p>
+  <p class="note">Needs the RESMARK-9547 build deployed on staging-sandbox. Open in a private window (logged out).</p>
+  <p><rm-shopping-cart order-page-url="https://staging-sandbox.resmarksystems.com/public/order/index/Order/view"></rm-shopping-cart></p>
+  <table>
+    <tr><td><b>5. Connected product</b><br><small>WRE's copy of Moab's Arches Morning Tour (b4U65r). Product page and booking work.</small></td><td><rm-cart-button product-code="b4U65r" entity-id="59c280af63feeb671e8805bc" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>6. Cross-entity</b><br><small>Moab's own product (zAAs1r) on WRE's page. Should still open and book.</small></td><td><rm-cart-button product-code="zAAs1r" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>7. Invalid code</b><br><small>Expect: "Please call Western River Expeditions at &lt;phone&gt;".</small></td><td><rm-cart-button product-code="NOPE00" entity-id="59c280af63feeb671e8805bc" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+  </table>
+  <script async src="https://staging-sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=59c280af63feeb671e8805bc&useBrandColors=true"></script>
+</body>
+</html>

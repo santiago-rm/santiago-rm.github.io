@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESMARK-9627 - Widget cart</title>
+  <style>
+    body{font-family:sans-serif;margin:24px;max-width:900px}
+    td{padding:10px;border-bottom:1px solid #ddd;vertical-align:middle}
+    code{background:#f3f3f3;padding:2px 4px}
+    .note{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px}
+  </style>
+</head>
+<body>
+  <h2>RESMARK-9627 - Widget cart (Moab)</h2>
+  <p>Widget for Moab Adventure Center <code>59a85113d0a18245272d6205</code> on <b>staging-sandbox</b>.</p>
+  <p class="note">Needs the RESMARK-9627 build deployed on staging-sandbox. Keep the browser dev tools Network tab open and filter by <code>Cart</code>.</p>
+  <p><rm-shopping-cart order-page-url="https://staging-sandbox.resmarksystems.com/public/order/index/Order/view"></rm-shopping-cart></p>
+  <table>
+    <tr><td><b>Arches Morning Tour</b> (zAAs1r)</td><td><rm-cart-button product-code="zAAs1r" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+    <tr><td><b>Full-Day Moab Rafting</b> (v6TA0D)</td><td><rm-cart-button product-code="v6TA0D" entity-id="59a85113d0a18245272d6205" price-code="Default" button-label="Add To Cart" class="ui rm button primary"></rm-cart-button></td></tr>
+  </table>
+  <h3>Checks</h3>
+  <ol>
+    <li><b>Guest checkout</b> (private window, not logged in): add a product, open the cart, check out through payment. The order completes and no request returns 401.</li>
+    <li><b>Logged in</b>: log in to staging-sandbox in the same browser, reload this page. The cart list request returns 200 and shows your carts.</li>
+    <li><b>Session expires</b>: while logged in, log out in another tab (or wait for the session to expire), then reload this page. The cart shows empty and does not keep spinning.</li>
+  </ol>
+  <script async src="https://staging-sandbox.resmarksystems.com/javascript/resmark-order.js?entityId=59a85113d0a18245272d6205&useBrandColors=true"></script>
+</body>
+</html>
